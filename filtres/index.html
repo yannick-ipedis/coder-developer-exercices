@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Filtres - Ipedis</title>
+</head>
+<body>
+    <main role="main">
+        <h1>Filtres</h1>
+        <ul class="filters">
+            <li><button class="filter" data-filter="rouge" aria-label="Afficher tous les rouges">ROUGE</button></li>
+            <li><button class="filter" data-filter="bleu" aria-label="Afficher tous les bleus">BLEU</button></li>
+            <li><button class="filter" data-filter="all" aria-label="Afficher tous les éléments">TOUS</button></li>
+        </ul>
+    
+        <div id="results" class="results-text"></div>
+        
+        <div class="projects">
+          <div class="project rouge" data-filter="rouge">ROUGE 1</div>
+          <div class="project bleu" data-filter="bleu">BLEU 1</div>
+          <div class="project rouge" data-filter="rouge">ROUGE 2</div>
+          <div class="project hide rouge" data-filter="rouge">ROUGE 3</div>
+          <div class="project bleu" data-filter="bleu">BLEU 2</div>
+          <div class="project rouge" data-filter="rouge">ROUGE 4</div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
