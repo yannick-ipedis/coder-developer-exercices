@@ -3,12 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Web Accessible - </title>
+    <title>Site Web Accessible - Barre de navigation</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Contenu principal -->
-    <main role="main" id="main-content">
-    </main>
+    <nav>
+        <ul>
+            <li>
+                <a href="/notre-groupe">Notre groupe</a>
+            </li>
+            <li>
+                <a href="/responsabilite">Responsabilité</a>
+            </li>
+            <li>
+                <a href="/actualites" id="actualites-link">Actualités</a>
+                <button id="open-submenu" aria-controls="submenu-actualites" >
+                    ▼
+                </button>
+                <ul id="submenu-actualites" class="hidden">
+                    <li><a href="/actualites/toutes">Toutes nos actualités</a></li>
+                    <li><a href="/actualites/communiques">Communiqués de presse</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/parrainage">Parrainage</a>
+            </li>
+            <li>
+                <a href="/publications-documents">Publications & documents</a>
+            </li>
+        </ul>
+    </nav>
+    <script src="script.js"></script>
 </body>
 </html>

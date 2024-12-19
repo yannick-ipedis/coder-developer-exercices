@@ -1,63 +1,70 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>The New York Times - Breaking News, US News, World News and Videos</title>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Le Monde.fr - Actualités et Infos en France et dans le monde</title>
 	<link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+</head>
+
+<body>
 	<div class="wrapper">
 		<header id="header">
 			<div id="hgroup">
-				<h1><a href="#">Learning Accessibility</a></h1>
-				<p aria-roledescription="subtitle">Creating Accessible Components for the web</p>
+				<h1><a href="#">Apprendre l'accessibilité numérique</a></h1>
+				<p>Créer des composants accessibles pour le web</p>
 			</div>
-			<nav>
+			<nav aria-label="menu principale">
 				<ul>
-				<li><a href="#" aria-current="true">Homepage</a></li>
-				<li><a href="#">Strategy</a></li>
-				<li><a href="#">Commitments</a></li>
-				<li><a href="#">About</a></li>
-				<li class="last"><a href="#">Contact</a></li>
+					<div><a href="#" aria-current="true">Accueil</a></div>
+					<div><a href="#">Strategie</a></div>
+					<div><a href="#">Nos Engagements</a></div>
+					<div><a href="#">A propos</a></div>
+					<div class="last"><a href="#">Contact</a></div>
 				</ul>
 			</nav>
 		</header>
 		<main>
-            <div class="text">
-                <h2>A positive role to play</h2>
-                <p>Societe Generale group aims to be a trusted partner for our clients and is resolutely committed to the positive transformations taking place in the world. Whether working in Europe, contributing to sustainable development in Africa or supporting the global ecological transition, we address the challenges of our time by seeing them as opportunities.</p>
-                <h2>Four shared values</h2>
-                <p>Team Spirit, Innovation, Responsibility, Commitment: Societe Generale group's core values are reflected in all our commercial activities for every one of our stakeholders. Societe Generale acts with integrity in accordance with the Group's Code of Conduct.</p>
-                <h2>Our Team</h2>
-            </div>
-			<table cellpadding="10">
+			<div class="text">
+				<h2>Un rôle positif à jouer</h2>
+				<p>Le groupe se veut un partenaire de confiance pour ses clients et s'engage résolument dans les
+					transformations positives du monde. Qu'il s'agisse de travailler en Europe, de contribuer au
+					développement durable et d'accompagner la transition écologique mondiale, nous relevons les défis de
+					notre temps en les considérant comme des opportunités.</p>
+				<h2>Nos valeurs communes</h2>
+				<p>Esprit d'équipe, innovation, responsabilité, engagement : ces valeurs fondamentales se reflètent dans
+					toutes nos activités et auprès de chacune de nos parties prenantes.</p>
+			</div>
+			<h2>Notre équipe</h2>
+			<table>
 				<tr>
-				  <th scope="col">Surname</th>
-				  <th scope="col">Firstname</th>
-				  <th scope="col">Town</th>
+					<td>Nom</th>
+					<td>Prénom</th>
+					<td>Ville</th>
 				</tr>
 				<tr>
-				  <td><s>Henry</s></td>
-				  <td><s>Thierry</s></td>
-				  <td><s>Paris</s></td>
+					<td><s>Henry</s></td>
+					<td><s>Thierry</s></td>
+					<td><s>Paris</s></td>
 				</tr>
 				<tr>
-				  <td>Monrouger</td>
-				  <td>Estelle</td>
-				  <td>Agen</td>
+					<td>Monrouger</td>
+					<td>Estelle</td>
+					<td>Agen</td>
 				</tr>
 				<tr>
-				  <td>Wespille</td>
-				  <td>Delia</td>
-				  <td>Florence</td>
+					<td>Wespille</td>
+					<td>Delia</td>
+					<td>Florence</td>
 				</tr>
 			</table>
 		</main>
 		<footer>
-			<p>Copyright &copy; 2022- <a href="https://www.ipedis.com/" target="_blank">Ipedis</a></p>
+			<p>Copyright &copy; 2025 - <a href="https://www.ipedis.com/" target="_blank">Ipedis</a></p>
 		</footer>
 	</div>
-  </body>
+</body>
+
 </html>

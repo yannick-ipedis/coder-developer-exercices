@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Web Accessible - </title>
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Contenu principal -->
+    <main role="main" id="main-content">
+        <h1>Onglets</h1>
+        <div class="tabs tablist">
+            <button aria-selected="true" aria-controls="tab-panel-1" id="tab-1" tabindex="0" class="tabbutton">Accessibilité web</button>
+            <button aria-selected="false" aria-controls="tab-panel-2" id="tab-2" tabindex="-1" class="tabbutton">C'est quoi l'accessibilité numérique ?</button>
+            <button aria-selected="false" aria-controls="tab-panel-3" id="tab-3" tabindex="-1" class="tabbutton">Les enjeux</button>
+        </div>
+        <div class="tab-container">
+            <div id="tab-panel-1" class="tabpanel">
+                <p>L'accessibilité numérique est un enjeu devenu primordial avec la démocratisation des outils digitaux. Mais peu de gens savent vraiment ce que cela signifie. Définition, périmètre légal et bénéfices, tous ces points clés sont abordés en détails dans ce chapitre.</p>
+                <a href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/">Information officielle sur le RGAA 4.1</a>
+            </div>
+            <div id="tab-panel-2" class="tabpanel" hidden>
+                <p>L'accessibilité numérique (“a11y”) permet aux personnes en situation de handicap d'accéder aux contenus et services digitaux. Pour ce faire, on applique aux interfaces digitales des normes d'accessibilité émises par le W3C (World Wide Web Consortium) et pensées par des ergonomes pour chaque type de handicap.</p>
+                <p>L'accessibilité couvre également des notions liées à la compatibilité matérielle et logicielle ainsi qu'à la performance des réseaux. Tous les utilisateurs, sans discrimination, pourront alors Percevoir - Comprendre - Naviguer, mais aussi Interagir - Créer du contenu - Apporter leur contribution à l'univers numérique.</p>
+                <p>Outre son utilité première, à savoir la mise à disposition des contenus aux publics sans discrimination, l'accessibilité numérique présente de nombreux avantages - et pas des moindres - qui constituent autant d'opportunités pour les entreprises, bien au-delà d'une obligation légale.</p>
+                <a href="https://www.fresque-accessibilite-web.fr/">Découvrir notre Fresque de l'Accessibilité Web</a>
+            </div>
+            <div id="tab-panel-3" class="tabpanel" hidden>
+                <h2>Prendre en compte les handicaps est utile à tous</h2>
+                <p>Aujourd'hui, encore beaucoup de sites Web et d'applications mobiles sont conçus sans penser à la navigation des personnes en situation de handicap. Pourtant, pour ces personnes, l'outil digital représente un véritable levier d'intégration, et leur apporte bien souvent un surcroît d'indépendance.</p>
+                <p>Selon les différents types de handicaps, les manquements les plus couramment relevés sur le Web ne sont pas les mêmes - vous trouverez ci-contre un tableau récapitulant ces obstacles.</p>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

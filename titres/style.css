@@ -1,0 +1,47 @@
+main {
+    width: 80%;
+    margin: auto;
+}
+
+section {
+    padding-left: 10px;
+}
+
+h1 {
+    color: #E9041E;
+    background: white;
+    font-size: 1.875rem;
+    font-family: Arial;
+    border-bottom: 3px solid #E9041E;
+}
+
+h2 {
+    color: #E9041E;
+    background: white;
+    font-size: 1.575rem;
+    font-family: Arial;
+}
+
+h3, .title-3 {
+    color: black;
+    background: white;
+    font-size: 1.275rem;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+h4, .title-4 {
+    color: black;
+    background: white;
+    font-size: 1rem;
+    font-family: Arial;
+    font-weight: bold;
+    font-style: italic;
+}
+
+p {
+    color: black;
+    background: white;
+    font-size: 1rem;
+    font-family: Arial;
+}

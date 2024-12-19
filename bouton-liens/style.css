@@ -1,23 +1,54 @@
-.card-deck{
-    margin: 15px;
-  }
+main{
+  width: 1000px;
+  margin: 0 auto;
+}
 
-  *:focus{
-    outline:2px solid black !important;
-    box-shadow:none !important;
-  }
+.card-deck {
+  margin: 15px;
+}
 
-  .btn-primary{
-    background-color: #E9041E;
-    border:none;
-  }
+*:focus {
+  outline: 2px solid black !important;
+  outline-offset: 2px;;
+  box-shadow: none !important;
+}
 
-  .full-link{
-    color:black;
-    display: block;
-  }
+.btn-primary {
+  background-color: #0F8570;
+  border: none;
+  color: white !important;
+  margin: 10px 0;
+  display: block;
+}
 
-  .full-link:hover{
-    color:#0062cc;
-    text-decoration: none;
-  }
+.full-link {
+  color: black;
+  display: block;
+}
+
+a.btn-primary:hover, button:hover {
+  background-color: #124377 !important;
+  text-decoration: none;
+}
+
+.btn-group{
+  flex-direction: column;
+}
+
+a.complete-link{
+  text-decoration: none;
+  color: #000;
+  display: block;
+}
+
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

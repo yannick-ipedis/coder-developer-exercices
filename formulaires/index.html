@@ -4,11 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Web Accessible - </title>
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Contenu principal -->
     <main role="main" id="main-content">
+        <form class="signup-form" action="#" id="signup-form" method="get">
+
+            <div class="signup-form_header">    
+              <h1>Formulaire de contact</h1>
+              <p>* Champs obligatoire</p>
+            </div>
+      
+            <div class="form-item signup-form_two-items" >
+              <div>
+                <label>Prénom: *</label>
+                <input class="required-field" type="text" id="fname" name="fname" autocomplete="off">
+                <div class="error-message" id="error-required-name">Le champ prénom est obligatoire</div>
+              </div>
+      
+              <div class="form-item ">
+                <label>Nom: *</label>
+                <input class="required-field" type="text" id="lname" name="lname" autocomplete="off">
+                <div class="error-message" id="error-required-lname">Le champ nom est obligatoire</div>
+              </div>
+            </div>
+      
+            <div class="form-item signup-form_address">
+              <div>
+                <label>Adresse : </label>
+                <input id="addr1" name="addr1" autocomplete="off">
+              </div>
+            </div>
+      
+            <div class="form-item signup-form_code_postal ">
+              <label>Code postale : *</label>
+              <input class="numeric" type="tel" id="code_postal" name="code_postal" maxlength="5" autocomplete="off">
+              <div class="error-message error-required-num" id="error-required-p_cp">Le code postal doit être composé de 5 chiffres</div>
+            </div>
+              
+            <div class="form-item signup-form_country">
+              <label>Pays : *</label>
+              <select id="country" name="country" required>
+                <option value="france">France</option>
+                <option value="Canada">Canada</option>
+                <option value="USA">Etat-Unis</option>
+                <option value="Italia">Italie</option>
+                <option value="Germany">Allemangne</option>
+              </select>
+            </div>
+            
+            <div class="form-item signup-form_newsletter">
+              <h2>Souhaitez-vous recevoir notre lettre d'information mensuelle ?</h2>
+                <input type="radio" id="yy" name="newsletter" value="yes" checked>
+                <label for="yy">Oui</label>
+                <input type="radio" id="nn" name="newsletter" value="no">
+                <label for="nn">Non</label>
+            </div>
+      
+            <div class="form-item signup-form_remember dn">		
+              <input type="checkbox" id="remember" name="remember" class="checkbox">
+              <label for="remember" id="politique">Politique de confidentialité</label>
+              <div class="error-message" id="error-required-privacy">La politique de confidentialité est obligatoire</div>
+            </div>
+          
+            <div class="signup-form_footer">
+              <button type="submit">
+                Envoyer
+                <i class="gg-chevron-double-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </form>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

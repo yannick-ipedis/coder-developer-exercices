@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Web Accessible - </title>
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Contenu principal -->
+    <main role="main" id="main-content">
+        <!-- Define the button with a button tag -->
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Cookies</h5>
+                <p class="card-text">Nous utilisons des cookies pour un certain nombre de raisons, notamment pour assurer la fiabilité et la sécurité de notre site, personnaliser le contenu et les publicités, fournir des fonctions de médias sociaux et analyser la manière dont nos sites sont utilisés.</p>
+                <button type="button" class="btn btn-primary">Gérer les cookies</button>
+            </div>
+        </div>
+
+        <!-- Hide the empty div containing the overlay effect with an aria-hidden attribute -->
+        <div class="overlay-background" aria-hidden="true"></div>
+
+        <!-- Code for dialog -->
+        <div class="dialog">
+            <button class="close-dialog">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                    fill="none">
+                    <path
+                        d="M3.16669 16C3.16669 8.91615 8.91616 3.16667 16 3.16667C23.0839 3.16667 28.8334 8.91615 28.8334 16C28.8334 23.0839 23.0839 28.8333 16 28.8333C8.91616 28.8333 3.16669 23.0839 3.16669 16ZM4.83335 16C4.83335 22.1561 9.84388 27.1667 16 27.1667C22.1562 27.1667 27.1667 22.1561 27.1667 16C27.1667 9.84386 22.1562 4.83334 16 4.83334C9.84388 4.83334 4.83335 9.84386 4.83335 16Z"
+                        fill="black" stroke="black" />
+                    <path
+                        d="M17.3988 16.3536L20.6263 19.581L19.581 20.6262L16.3536 17.3988L16 17.0452L15.6465 17.3988L12.419 20.6262L11.3738 19.581L14.6012 16.3536L14.9548 16L14.6012 15.6464L11.3738 12.419L12.419 11.3738L15.6465 14.6012L16 14.9548L16.3536 14.6012L19.581 11.3738L20.6262 12.419L17.3988 15.6464L17.0452 16L17.3988 16.3536Z"
+                        fill="black" stroke="black" />
+                </svg>
+            </button>
+            <div class="dialog-title">
+                <h2 id="dialog-reference">Gestion des cookies</h2>
+                <h3>Qu'est-ce qu'un cookie ?</h3>
+                <p>Les cookies sont de petits fichiers texte qui sont placés et stockés sur votre terminal lorsque vous visitez un site web. Un cookie permet à son émetteur d'identifier le terminal dans lequel il est enregistré pendant la durée de validité ou d'enregistrement de ce cookie. Le terme « cookies » désigne l'ensemble des technologies permettant de tracer la navigation de l'utilisateur. Le terminal désigne l'équipement (ordinateur, tablette, smartphone, etc.) que vous utilisez pour consulter ou visualiser un site internet, une application ou un contenu publicitaire, etc.</p>
+            </div>
+            <div>
+                <button class="dialog-btn">J'accepte</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js" rel="text/javascript"></script>
+</body>
+
+</html>

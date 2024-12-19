@@ -1,0 +1,175 @@
+@import url("https://css.gg/chevron-double-right.css");
+
+body {
+    color: black;
+    background: white;
+    font-family: sans-serif;
+}
+
+.signup-form {
+    width: 768px;
+    margin: 0 auto;
+}
+
+.signup-form label {
+    margin-right: 20px;
+    width: 120px;
+}
+
+label#politique{
+    width: 200px;
+}
+
+.signup-form input {
+    margin-bottom: 10px;
+}
+
+.signup-form .signup-form_footer button {
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signup-form .signup-form_footer button .gg-chevron-double-right {
+    display: inline !important;
+}
+
+.signup-form .error-message__right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.signup-form .error-message_arrow__right {
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 6px solid #bd1402;
+}
+
+.signup-form .error-message__top {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    position: absolute;
+}
+
+.signup-form .error-message_arrow__top {
+    width: 0;
+    height: 0;
+    border-top: 6px solid #bd1402;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+}
+
+.signup-form .error-message__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.signup-form .error-message_arrow__bottom {
+    width: 0;
+    height: 0;
+    border-bottom: 8px solid #bd1402;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+}
+
+.signup-form .error-message_body {
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #bd1402;
+    color: white;
+    font-size: 0.8em;
+}
+
+.signup-form .fname_err-coords {
+    top: 59px;
+    left: 5px;
+}
+
+.signup-form .lname_err-coords {
+    top: 59px;
+    left: 180px;
+}
+
+.signup-form .uname_err-coords {
+    top: 125px;
+    left: 175px;
+}
+
+.signup-form .email_err-coords {
+    top: 160px;
+    left: 140px;
+}
+
+.signup-form .age_err-coords {
+    top: 195px;
+    left: 150px;
+}
+
+.signup-form .pwd_err-coords {
+    top: 420px;
+    left: 10px;
+}
+
+.signup-form .conf_pwd_err-coords {
+    top: 485px;
+    left: 190px;
+}
+
+.signup-form .error-message {
+    display: none;
+    color: rgb(167, 0, 0);
+}
+
+.inbox {
+    max-width: 100px;
+    margin: 30px auto;
+    background: rgb(197, 194, 194);
+    border-radius: 5px;
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #979797;
+}
+
+.item:last-child {
+    border-bottom: 0;
+}
+
+input:checked+p {
+    background: #F9F9F9;
+    text-decoration: line-through;
+}
+
+input[type="checkbox"] {
+    margin: 15px;
+}
+
+p {
+    margin: 0;
+    padding: 3px;
+    transition: background 0.5s;
+    flex: 5;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.form-item {
+    margin: 10px 0;
+}
